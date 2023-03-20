@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Ragnar Lothbrok for Ragnarok",
+      "category": "Laptop",
+      "price": 10000,
+      "description": "lorem ipsum doler quid facio. qouo sunt habitatis",
+      "rating": 4.5
+    },
+    {
+      "title": "HP",
+      "category": "",
+      "description": "This is hp laptop",
+      "rating": "2",
+      "price": "40000",
+      "id": 2
+    },
+    {
+      "title": "Shopaholic",
+      "category": "headphone",
+      "description": "An earphone made for the ears\n",
+      "rating": "4",
+      "price": "10000",
+      "id": 3
+    },
+    {
+      "title": "some Product",
+      "category": "mobile",
+      "description": "This is some product",
+      "rating": "5",
+      "price": "240000",
+      "id": 4
+    },
+    {
+      "title": "something",
+      "category": "tablet",
+      "description": "This something but something can be nothing in sometime",
+      "rating": "3",
+      "price": "10000",
+      "id": 5
+    },
+    {
+      "title": "Refrigerator",
+      "category": "tv",
+      "description": "This is a TV which is called refrigerator",
+      "rating": "5",
+      "price": "50000",
+      "id": 6
+    }
+  ]
+}

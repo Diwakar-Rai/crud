@@ -1,0 +1,183 @@
+#ProductDashboard article {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+#ProductDashboard article .sidebar {
+  flex-basis: 20%;
+  background-color: #274283;
+  height: 100vh;
+  color: #fff;
+  /* padding: 10px; */
+}
+
+.mainContainer {
+  padding: 10px;
+  background-color: #fff;
+  flex-basis: 75%;
+}
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+.sidebar ul li {
+  /* padding: 10px; */
+  background-color: #12234b;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+.sidebar ul li:hover {
+  background-color: #fff;
+  border-bottom: 1px solid #12234b;
+  transition: all 1s ease;
+}
+
+.sidebar ul li:hover a {
+  color: #181818;
+  border-bottom: 1px solid #274283;
+  border-top: 1px solid #274283;
+}
+
+.sidebar ul li .active {
+  background-color: #fff;
+  color: #274283;
+}
+
+form {
+  background: #eeeeee5c;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.formGroup {
+  flex-basis: 32%;
+}
+
+.formGroup label{
+    padding-bottom: 10px;
+}
+
+.formControl, textarea, select{
+    width: 100%;
+}
+
+#category{
+    flex-basis: 100%;
+}
+
+.formGroup button{
+    background-color: #274283;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+.formGroup button:hover{
+    color: #274283;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #274283;
+}
+
+.allproducts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allproducts .content{
+    flex-basis: 30%;
+    margin-right: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.allproducts .content figure{
+    width: 100%;
+}
+.allproducts .content img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.content h3{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #181818;
+}
+
+.content p{
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 5px 0;
+    color: #181818;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  background-color: royalblue;
+  border-radius: 5px;
+}
+
+footer p a:hover{
+  color: #181818;
+  background-color: #fff;
+  border: 1px solid #181818;
+  transition: all .7s ease;
+}
+
+.product article aside{
+  display: flex;
+}
+
+.photo{
+  flex-basis: 50%;
+  margin-right: 30px;
+}
+
+.photo figure{
+  width: 100%;
+  overflow: hidden;
+}
+.photo figure img{
+  width: 100%;
+}
+
+.photo figure:hover img{
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.description{
+  color: #181818;
+}
+.description main h1{
+  color: #181818;
+  padding: 10px 0;
+  border-bottom: 1px solid #181818;
+  font-size: 25px;
+}
