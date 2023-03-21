@@ -1,10 +1,17 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { axiosInstance } from "./../../axios/AxiosInstance";
+import { axiosInstance } from "../../axios/AxiosInstance";
 import { faker } from "@faker-js/faker";
-import Style from './_product.module.css'
-import { Link } from 'react-router-dom';
+import Style from "./_product.module.css";
+import { Link } from "react-router-dom";
 const AllProduct = () => {
   let [products, setProducts] = useState([]);
+  let [isAuth, setIsAuth] = useState(true);
+
+  let deleteProduct = async id => {
+    await axiosInstance.delete(`/products/${id}`);
+    window.location.assign("/product-dashboard/all-product");
+    // toast.success("successfully deleted the product");
+  };
   useEffect(() => {
     let fetchProducts = async () => {
       try {
@@ -18,7 +25,7 @@ const AllProduct = () => {
   }, []);
   return (
     <>
-        <h1>List of Products</h1>
+      <h1>List of Products</h1>
       <div className={Style.allproducts}>
         {products.length > 0
           ? products?.map(product => {
@@ -38,6 +45,21 @@ const AllProduct = () => {
                       <p>
                         <a href="#">Add to Cart</a>
                       </p>
+                      {isAuth === true && (
+                        <p className={Style.link}>
+                          <button
+                            className={`${Style.deleteBtn} btn btn-danger btn-sm`}
+                            onClick={() => deleteProduct(product.id)}
+                          >
+                            Delete
+                          </button>
+                          <Link
+                            to={`/product-dashboard/update-product/${product.id}`}
+                          >
+                            Edit
+                          </Link>
+                        </p>
+                      )}
                       <p>
                         <Link to={`/product-dashboard/products/${product.id}`}>
                           view

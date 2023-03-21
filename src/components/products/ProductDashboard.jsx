@@ -30,13 +30,14 @@ const ProductDashboard = () => {
             </li>
             <li>
               <NavLink
-                to="/product-dashboard/products"
+                to="/product-dashboard/allProductTable"
                 className={({ isActive }) =>
                   isActive ? `${Style.active}` : "inactive"
                 }
                 end
               >
-                Product
+                Product 
+                table
               </NavLink>
             </li>
           </ul>

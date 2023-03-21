@@ -105,6 +105,8 @@ form {
     background-color: #eee;
     border-radius: 5px;
     margin-bottom: 30px;
+        position: relative;
+
 }
 .allproducts .content figure{
     width: 100%;
@@ -180,4 +182,10 @@ footer p a:hover{
   padding: 10px 0;
   border-bottom: 1px solid #181818;
   font-size: 25px;
+}
+
+.deleteBtn{
+  position: absolute;
+  top: 0;
+  right: 0;
 }

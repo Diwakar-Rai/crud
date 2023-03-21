@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Ragnar Lothbrok for Ragnarok",
-      "category": "Laptop",
-      "price": 10000,
-      "description": "lorem ipsum doler quid facio. qouo sunt habitatis",
-      "rating": 4.5
-    },
-    {
       "title": "HP",
       "category": "",
       "description": "This is hp laptop",
@@ -17,15 +9,7 @@
       "id": 2
     },
     {
-      "title": "Shopaholic",
-      "category": "headphone",
-      "description": "An earphone made for the ears\n",
-      "rating": "4",
-      "price": "10000",
-      "id": 3
-    },
-    {
-      "title": "some Product",
+      "title": "Changed Product",
       "category": "mobile",
       "description": "This is some product",
       "rating": "5",
