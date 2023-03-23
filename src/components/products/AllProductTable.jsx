@@ -19,7 +19,7 @@ const AllProductTable = () => {
     fetchProduct();
   }, []);
   return (
-    <section className="container">
+    <section className="container-fluid">
       <table className="table table-hover table-bordered table-responsive">
         <thead className="table-dark">
           <tr>

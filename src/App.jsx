@@ -12,13 +12,20 @@ import AllProduct from "./components/products/AllProduct";
 import UpdataProduct from "./components/products/UpdataProduct";
 import PageNotFound from "./pages/PageNotFound";
 import ProductDashboard from "./components/products/ProductDashboard";
-import AllProductTable from "./components/products/AllProductTable"
+import AllProductTable from "./components/products/AllProductTable";
+import { createPortal } from "react-dom";
+import Login from "./components/auth/Login";
+
+const LoginPortal = () => {
+  return createPortal(<Login />, document.getElementById("loginPortal"));
+};
 
 const App = () => {
   return (
     <section id="mainContainer">
       <article>
         <Router>
+      <LoginPortal/>
           <Navbar />
           <ToastContainer theme="dark" />
           <Routes>
@@ -30,6 +37,8 @@ const App = () => {
               <Route path="products/:id" element={<Product />} />
               <Route path="allProductTable" element={<AllProductTable />} />
             </Route>
+
+            <Route path="/login" element={<Login />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Router>

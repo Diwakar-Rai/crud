@@ -23,14 +23,6 @@
       "rating": "3",
       "price": "10000",
       "id": 5
-    },
-    {
-      "title": "Refrigerator",
-      "category": "tv",
-      "description": "This is a TV which is called refrigerator",
-      "rating": "5",
-      "price": "50000",
-      "id": 6
     }
   ]
 }
